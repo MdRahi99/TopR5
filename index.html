@@ -30,32 +30,34 @@
                         <img class="h-44 w-96" src="./img/card-1.jpg" alt="">
                         <h3 id="player-1" class="my-3 font-semibold">Lionel Messi</h3>
                         <p><span class="mr-6">36 Goals</span><span>.</span><span class="ml-6">120 Assist</span></p>
-                        <button id="btn-card-1" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-1" onclick="getPlayerNameById('Lionel Messi'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-2.jpg" alt="">
                         <h3 id="player-2" class="my-3 font-semibold">Cristiano Ronaldo</h3>
                         <p><span class="mr-6">41 Goals</span><span>.</span><span class="ml-6">110 Assist</span></p>
-                        <button id="btn-card-2" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-2" onclick="getPlayerNameById('Cristiano Ronaldo'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-3.jpg" alt="">
                         <h3 id="player-3" class="my-3 font-semibold">Neymar Jr</h3>
                         <p><span class="mr-6">31 Goals</span><span>.</span><span class="ml-6">95 Assist</span></p>
-                        <button id="btn-card-3" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-3" onclick="getPlayerNameById('Neymar Jr'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
-                        <h1 class="text-3xl my-6">Selected Five</h1>
+                        <h1 class="text-3xl my-6">Total Selected: <span id="total-selection">0</span></h1>
                         <hr class="w-2/5 m-auto">
-                        <ol class="list-inside list-decimal text-left text-2xl mx-4 pt-6">
-                            <li>Name</li>
-                            <li>Name</li>
-                            <li>Name</li>
-                            <li>Name</li>
-                            <li>Name</li>
+                        <ol id="olElement" class="list-inside list-decimal text-left text-2xl mx-4 pt-6">
+                
                         </ol>
                     </div>
 
@@ -63,21 +65,27 @@
                         <img class="h-44 w-96" src="./img/card-4.jpg" alt="">
                         <h3 id="player-4" class="my-3 font-semibold">Karim Benzema</h3>
                         <p><span class="mr-6">38 Goals</span><span>.</span><span class="ml-6">108 Assist</span></p>
-                        <button id="btn-card-4" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-4" onclick="getPlayerNameById('Karim Benzema'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-5.jpeg" alt="">
                         <h3 id="player-5" class="my-3 font-semibold">Mohammad Salah</h3>
                         <p><span class="mr-6">41 Goals</span><span>.</span><span class="ml-6">110 Assist</span></p>
-                        <button id="btn-card-5" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-5" onclick="getPlayerNameById('Mohammad Salah'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-6.jpg" alt="">
                         <h3 id="player-6" class="my-3 font-semibold">Van Dijk</h3>
                         <p><span class="mr-6">11 Goals</span><span>.</span><span class="ml-6">65 Assist</span></p>
-                        <button id="btn-card-6" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-6" onclick="getPlayerNameById('Van Dijk'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div> 
                     
                     <div class="card pt-12 row-span-2 shadow-lg bg-neutral-900 mx-4 my-6">
@@ -108,21 +116,27 @@
                         <img class="h-44 w-96" src="./img/card-7.jpg" alt="">
                         <h3 id="player-7" class="my-3 font-semibold">Alisson Becker</h3>
                         <p><span class="mr-6">2 Goals</span><span>.</span><span class="ml-6">28 Assist</span></p>
-                        <button id="btn-card-7" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-7" onclick="getPlayerNameById('Alisson Becker'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-8.jpg" alt="">
                         <h3 id="player-8" class="my-3 font-semibold">Thibaut Courtois</h3>
                         <p><span class="mr-6">5 Goals</span><span>.</span><span class="ml-6">10 Assist</span></p>
-                        <button id="btn-card-8" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-8" onclick="getPlayerNameById('Thibaut Courtois'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-9.jpeg" alt="">
                         <h3 id="player-9" class="my-3 font-semibold">De Ligt</h3>
                         <p><span class="mr-6">26 Goals</span><span>.</span><span class="ml-6">75 Assist</span></p>
-                        <button id="btn-card-9" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <div>
+                            <button id="btn-card-9" onclick="getPlayerNameById('De Ligt'), this.disabled = true, this.style.background='gray'" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        </div>
                     </div>
                 </div>
 

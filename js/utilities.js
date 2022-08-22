@@ -1,11 +1,4 @@
-// Selection Field Function
-function getPlayerNameById(playerId){
-        const getValue = document.getElementById(playerId);
-        const getName = getValue.innerText;
-        return getName;
-}
-
-// Budget Field Function
+// Budget Field Functions
 function getAmountValueById(AmountId){
     const getAmountField = document.getElementById(AmountId);
     const getAmount = parseFloat(getAmountField.value);
