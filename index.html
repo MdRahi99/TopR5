@@ -28,23 +28,23 @@
                 <div class="mx-12 grid grid-cols-4 text-white">
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-1.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Lionel Messi</h3>
+                        <h3 id="player-1" class="my-3 font-semibold">Lionel Messi</h3>
                         <p><span class="mr-6">36 Goals</span><span>.</span><span class="ml-6">120 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-1" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-2.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Cristiano Ronaldo</h3>
+                        <h3 id="player-2" class="my-3 font-semibold">Cristiano Ronaldo</h3>
                         <p><span class="mr-6">41 Goals</span><span>.</span><span class="ml-6">110 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-2" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-3.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Neymar Jr</h3>
+                        <h3 id="player-3" class="my-3 font-semibold">Neymar Jr</h3>
                         <p><span class="mr-6">31 Goals</span><span>.</span><span class="ml-6">95 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-3" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
@@ -61,23 +61,23 @@
 
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-4.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Karim Benzema</h3>
+                        <h3 id="player-4" class="my-3 font-semibold">Karim Benzema</h3>
                         <p><span class="mr-6">38 Goals</span><span>.</span><span class="ml-6">108 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-4" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-5.jpeg" alt="">
-                        <h3 class="my-3 font-semibold">Mohammad Salah</h3>
+                        <h3 id="player-5" class="my-3 font-semibold">Mohammad Salah</h3>
                         <p><span class="mr-6">41 Goals</span><span>.</span><span class="ml-6">110 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-5" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-6.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Van Dijk</h3>
+                        <h3 id="player-6" class="my-3 font-semibold">Van Dijk</h3>
                         <p><span class="mr-6">11 Goals</span><span>.</span><span class="ml-6">65 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-6" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div> 
                     
                     <div class="card pt-12 row-span-2 shadow-lg bg-neutral-900 mx-4 my-6">
@@ -85,44 +85,44 @@
                         <hr class="w-1/5 m-auto mb-12">
                         <div class="mx-12 my-6">
                             <label class="mr-3 text-slate-300">Per Player</label>
-                            <input class="focus:outline-none outline outline-2 bg-neutral-900 w-2/5" type="text">
-                            <button class="w-full py-2 bg-teal-800 hover:bg-teal-600 mt-5 mb-12 rounded">Calculate</button>
-                            <p class="mr-3 mb-12 text-slate-300">Player Expenses: $<span>00</span></p>
+                            <input id="playerAmount" class="focus:outline-none outline outline-2 bg-neutral-900 w-2/5" type="text">
+                            <button id="btn-calculation" class="w-full py-2 bg-teal-800 hover:bg-teal-600 mt-5 mb-12 rounded">Calculate</button>
+                            <p class="mr-3 mb-12 text-slate-300">Player Expenses: $<span id="playerExpenses">00</span></p>
                         </div>
     
                         <div class="mx-12 my-6">
                             <label class="mr-3 text-slate-300">Manager</label>
-                            <input class="focus:outline-none outline outline-2 bg-neutral-900 w-2/5" type="text">
+                            <input id="managerAmount" class="focus:outline-none outline outline-2 bg-neutral-900 w-2/5" type="text">
                         </div>
     
                         <div class="mx-12 my-6">
                             <label class="mr-8 text-slate-300">Coach</label>
-                            <input class="focus:outline-none outline outline-2 bg-neutral-900 w-2/5" type="text">
+                            <input id="coachAmount" class="focus:outline-none outline outline-2 bg-neutral-900 w-2/5" type="text">
     
-                            <button class="w-full py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Calculate Total</button>
-                            <p class="mr-3 mt-12 text-slate-300">Total: $<span>00</span></p>
+                            <button id="btn-totalCalculation" class="w-full py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Calculate Total</button>
+                            <p class="mr-3 mt-12 text-slate-300">Total: $<span id="totalExpenses">00</span></p>
                         </div>
                     </div>
 
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-7.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Alisson Becker</h3>
+                        <h3 id="player-7" class="my-3 font-semibold">Alisson Becker</h3>
                         <p><span class="mr-6">2 Goals</span><span>.</span><span class="ml-6">28 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-7" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-8.jpg" alt="">
-                        <h3 class="my-3 font-semibold">Thibaut Courtois</h3>
+                        <h3 id="player-8" class="my-3 font-semibold">Thibaut Courtois</h3>
                         <p><span class="mr-6">5 Goals</span><span>.</span><span class="ml-6">10 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-8" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
     
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-9.jpeg" alt="">
-                        <h3 class="my-3 font-semibold">De Ligt</h3>
+                        <h3 id="player-9" class="my-3 font-semibold">De Ligt</h3>
                         <p><span class="mr-6">26 Goals</span><span>.</span><span class="ml-6">75 Assist</span></p>
-                        <button class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
+                        <button id="btn-card-9" class="px-5 py-2 bg-teal-800 hover:bg-teal-600 my-5 rounded">Select</button>
                     </div>
                 </div>
 
@@ -134,5 +134,7 @@
     </footer>
 
     <script src="./js/utilities.js"></script>
+    <script src="./js/selection.js"></script>
+    <script src="./js/budget.js"></script>
 </body>
 </html>
