@@ -11,13 +11,13 @@
 <body>
     
     <header>
-        <div class="bg-slate-900 text-white grid grid-cols-2">
+        <div class="bg-slate-900 text-white grid grid-cols-1 lg:grid-cols-2">
             <div class="">
-                <img class="w-3/5" src="./img/bg-2.jpg" alt="">
+                <img class="w-full h-auto lg:w-3/5" src="./img/bg-2.jpg" alt="">
             </div>
-            <div class="m-auto">
-                <h1 class="text-6xl">Choose The <span class="text-orange-600 font-semibold">R5</span> Top Pillars</h1>
-                <p class="text-3xl mt-12"><span class="text-gray-800 bg-white">Select your top 5 players to build your Dream Squad. Here you yan choose your top List Players...</span></p>
+            <div class="mt-6 mx-4 lg:m-auto">
+                <h1 class="lg:text-6xl md:text-6xl text-3xl">Choose The <span class="text-orange-600 font-semibold">R5</span> Top Pillars</h1>
+                <p class="lg:text-4xl md:text-4xl text-1xl mt-12"><span class="text-gray-800 bg-white">Select your top 5 players to build your Dream Squad. Here you yan choose your top List Players...</span></p>
             </div>
         </div>
     </header>
@@ -25,7 +25,7 @@
     <main class="">
         <section class="bg-slate-900 pt-12">
             
-                <div class="mx-12 grid grid-cols-4 text-white">
+                <div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white">
                     <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
                         <img class="h-44 w-96" src="./img/card-1.jpg" alt="">
                         <h3 id="player-1" class="my-3 font-semibold">Lionel Messi</h3>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
     
-                    <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6">
+                    <div class="card shadow-lg bg-neutral-900 text-center mx-4 my-6 row-start-1 lg:row-span-1 md:row-span-1 md:row-start-1">
                         <h1 class="text-3xl my-6">Selected Five:</h1>
                         <hr class="w-2/5 m-auto">
                         <ol id="olElement" class="list-inside list-decimal text-left text-2xl mx-4 pt-6">
@@ -88,7 +88,7 @@
                         </div>
                     </div> 
                     
-                    <div class="card pt-12 row-span-2 shadow-lg bg-neutral-900 mx-4 my-6">
+                    <div class="card pt-12 lg:row-span-2 md:row-span-2 md:row-start-1 shadow-lg bg-neutral-900 mx-4 my-6 row-start-2">
                         <h1 class="text-3xl mt-6 mb-6 text-center">Budget</h1>
                         <hr class="w-1/5 m-auto mb-12">
                         <div class="mx-12 my-6">
