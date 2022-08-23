@@ -13,7 +13,9 @@ function getExpensesValueById(ExpenseId){
 }
 
 function getPlayerExpensesValue(value1){
-    const playerExpenses = value1 * 5;
+    const playerValue = document.getElementById('olElement');
+    const value = playerValue.children.length;
+    const playerExpenses = value1 * value;
     return playerExpenses;
 }
 function getOtherExpensesValue(value1, value2){
